@@ -99,7 +99,7 @@ div#video {
   position: relative;
 }
 
-div#video > iframe{
+div#video>iframe {
   position: absolute;
   top: 5%;
   left: 5%;
@@ -112,13 +112,10 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
-a.externo::after{
+
+a.externo::after {
   content: '\1F517';
 }
-
-/*article {
-  padding: 10px;
-}*/
 
 p {
   text-indent: 30px;
@@ -128,25 +125,29 @@ p {
 
 img {
   width: 100%;
+  text-align: center;
 }
-.imgpqn{
+
+.imgpqn {
   max-width: 350px;
+  text-align: center;
 }
 
 
-
-#links{
+#links {
   width: 100%;
   border-radius: 10px;
   background-color: #C6DB4B;
   margin: auto;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.37);
 }
-#links > p {
+
+#links>p {
   text-align: justify;
   text-indent: 10px;
 }
-#links > span {
+
+#links>span {
   color: white;
   text-align: left;
   font-weight: bold;
@@ -162,16 +163,16 @@ ul {
   list-style-position: inside;
   text-align: center;
   columns: 2;
-  
+
 }
 
-footer{
+footer {
   color: white;
   text-align: center;
   background-color: #3D5E12;
   padding: 15px;
 }
 
-.final{
+.final {
   color: white;
 }
