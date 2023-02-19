@@ -5,5 +5,5 @@
 
 <h3>Exercicio de site responsivo:</h3>
  <p><a href="https://azor97.github.io/html-css/ds010/index.html">Site Android</a>
- <strong>Site que se adapta ao tamanho da tela do usuario!</strong>
+ <em>Site que se adapta ao tamanho da tela do usuario!</em>
 </p>
