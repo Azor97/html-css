@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        caption{
+            text-transform: uppercase;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: rgb(163, 163, 163);
+            padding: 10px;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+        }
+
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+        }
+        th{
+            background-color: rgb(253, 215, 0);
+            color: rgb(80, 5, 30);
+        }
+
+        .position{
+            text-align: left;
+            width: 15%;
+            background-color: rgb(219, 219, 219);
+
+        }
+
+        tbody tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+
+    </style>
 </head>
+
 <body>
-    
+    <h1>Uso de tabelas grandes</h1>
+    <!-- ANATOMIA PARA TABELAS grandes
+    TABLE
+        THEAD
+         TR, TD, TH
+        TBODY
+            TR, TD, TD
+        TFOOT
+            TR, TD, TH
+        -->
+
+    <table>
+        <caption>Campeonato de FIFA</caption>
+        <thead>
+            <tr>
+                    <th scope="col">Posicao</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Pontos</th>
+                    <th scope="col">Vitorias</th>
+                    <th scope="col">Derrotas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="position">1
+                <td>Cruzeiro
+                <td>30
+                <td>10
+                <td>0
+            </tr>
+            <tr>
+                <td class="position">2
+                <td>Flamengo
+                <td>27
+                <td>9
+                <td>1
+            </tr>
+            <tr>
+                <td class="position">3
+                <td>Barcelona
+                <td>21
+                <td>7
+                <td>3
+            </tr>
+            <tr>
+                <td class="position">3
+                <td>Real Madrid
+                <td>9
+                <td>3
+                <td>7
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">000</th>
+            </tr>
+        </tfoot>
+    </table>
+
 </body>
+
 </html>
